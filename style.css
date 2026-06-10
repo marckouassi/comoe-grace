@@ -571,3 +571,47 @@ button,
     color: #0f0205;
     font-weight: bold;
 }
+
+.section-histoire {
+    background:
+        linear-gradient(rgba(255, 248, 248, 0.88), rgba(255, 242, 244, 0.88)),
+        url("assets/images/portbouet.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.counter {
+    display: flex;
+    gap: 25px;
+    margin: 30px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.counter div {
+    width: 120px;
+    height: 110px;
+    background: rgba(255,255,255,0.75);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(245,108,141,0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.counter strong {
+    font-size: 35px;
+    color: #f56c8d;
+}
+
+.counter span {
+    color: #2d1f1f;
+    font-weight: 600;
+}
+
+.final-text {
+    color: #f56c8d;
+    font-weight: 700;
+}

@@ -11,6 +11,10 @@
 </head>
 <body>
 
+    <audio id="loveMusic" loop>
+        <source src="assets/music/musique.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="heart heart1">❤</div>
     <div class="heart heart2">❤</div>
     <div class="heart heart3">❤</div>
@@ -51,12 +55,11 @@
                 <div class="form-right">
                     <form id="loveForm">
                         <input id="prenom" type="text" placeholder="Ton prénom" required>
+                        <input id="date" type="date" required>
+                        <input id="lieu" type="text" placeholder="Notre endroit de rencontre" required>
+                        <input id="surnom" type="text" placeholder="Ton surnom" required>
 
-<input id="date" type="date" placeholder="La date de notre rencontre" required>
-
-<input id="lieu" type="text" placeholder="Notre endroit de rencontre" required>
-
-<input id="surnom" type="text" placeholder="Ton surnom" required>
+                        <button type="button" id="musicBtn">Lancer la musique 🎵</button>
                         <button type="submit">Continuer 💌</button>
                     </form>
                 </div>
@@ -66,84 +69,78 @@
 
         <section id="histoire" class="section-histoire locked">
 
-    <div class="histoire-text">
+            <div class="histoire-text">
+                <h2 id="titreHistoire">Toi & Moi ♡</h2>
 
-        <h2 id="titreHistoire">Toi & Moi ♡</h2>
+                <h3>Une histoire qui vaut tout l'or du monde.</h3>
 
-        <h3>Une histoire qui vaut tout l'or du monde.</h3>
+                <div class="line-heart">
+                    <span></span>
+                    ❤
+                    <span></span>
+                </div>
 
-        <div class="line-heart">
-            <span></span>
-            ❤
-            <span></span>
-        </div>
+                <p id="histoireTexte">
+                    Notre histoire va apparaître ici...
+                </p>
 
-        <p id="histoireTexte">
-            Notre histoire va apparaître ici...
-        </p>
+                <a href="#souvenirs" class="btn">
+                    Découvrir notre histoire ↓
+                </a>
+            </div>
 
-        <a href="#souvenirs" class="btn">
-            Découvrir notre histoire ↓
-        </a>
+            <div class="polaroid-box">
+                <img src="assets/images/portbouet.jpg" class="photo-main" alt="Photo souvenir">
+                <img src="assets/images/bras.jpeg" class="photo-small photo-left" alt="Photo souvenir">
+                <img src="assets/images/piscine.jpeg" class="photo-small photo-right" alt="Photo souvenir">
 
-    </div>
+                <div class="big-heart">💗</div>
+            </div>
 
-    <div class="polaroid-box">
-
-        <img src="assets/images/portbouet.jpg" class="photo-main">
-
-        <img src="assets/images/bras.jpeg" class="photo-small photo-left">
-
-        <img src="assets/images/piscine.jpeg" class="photo-small photo-right">
-
-        <div class="big-heart">💗</div>
-
-    </div>
-
-</section>
+        </section>
 
         <section id="souvenirs" class="section-simple locked">
-    <h2>Nos souvenirs ♡</h2>
-    <p>Quelques moments qui resteront à jamais gravés.</p>
+            <h2>Nos souvenirs ♡</h2>
+            <p>Quelques moments qui resteront à jamais gravés.</p>
 
-    <div class="souvenirs-grid">
+            <div class="souvenirs-grid">
 
-        <div class="souvenir-card">
-            <video src="assets/videos/pasconhan.mp4" controls></video>
-        </div>
+                <div class="souvenir-card">
+                    <video src="assets/videos/pasconhan.mp4" controls></video>
+                </div>
 
-        <div class="souvenir-card">
-            <video src="assets/videos/jm.mp4" controls></video>
-        </div>
+                <div class="souvenir-card">
+                    <video src="assets/videos/jm.mp4" controls></video>
+                </div>
 
-        <div class="souvenir-card">
-            <video src="assets/videos/valentin.mp4" controls></video>
-        </div>
+                <div class="souvenir-card">
+                    <video src="assets/videos/valentin.mp4" controls></video>
+                </div>
 
-        <div class="souvenir-card">
-            <video src="assets/videos/bisous.mp4" controls></video>
-        </div>
+                <div class="souvenir-card">
+                    <video src="assets/videos/bisous.mp4" controls></video>
+                </div>
 
-        <div class="souvenir-card more-souvenir">
-            <video src="assets/videos/joie.mp4" controls></video>
-        </div>
+                <div class="souvenir-card more-souvenir">
+                    <video src="assets/videos/joie.mp4" controls></video>
+                </div>
 
-        <div class="souvenir-card more-souvenir">
-            <video src="assets/videos/uno.mp4" controls></video>
-        </div>
+                <div class="souvenir-card more-souvenir">
+                    <video src="assets/videos/uno.mp4" controls></video>
+                </div>
 
-        <div class="souvenir-card more-souvenir">
-            <video src="assets/videos/Orange.mp4" controls></video>
-        </div>
+                <div class="souvenir-card more-souvenir">
+                    <video src="assets/videos/Orange.mp4" controls></video>
+                </div>
 
-        <div class="souvenir-card more-souvenir">
-            <video src="assets/videos/aboisso.mp4" controls></video>
-        </div>
+                <div class="souvenir-card more-souvenir">
+                    <video src="assets/videos/aboisso.mp4" controls></video>
+                </div>
 
-    </div>
+            </div>
 
-    <button class="btn" id="voirPlusBtn">Voir plus de souvenirs 📸</button>
-</section>
+            <button class="btn" id="voirPlusBtn">Voir plus de souvenirs 📸</button>
+        </section>
 
         <section id="messages" class="section-simple locked">
             <h2>Mes messages pour toi ♡</h2>
@@ -153,30 +150,24 @@
 
                 <div class="message-card">
                     <div class="quote">“</div>
-                    <p>
-                        Merci d’être toi, d’être là,
-                        d’aimer comme tu le fais,
-                        tu rends ma vie incroyable.
+                    <p id="message1">
+                        Merci d’être toi, d’être là, tu rends ma vie incroyable.
                     </p>
                     <div class="mini-heart">❤</div>
                 </div>
 
                 <div class="message-card">
                     <div class="quote">“</div>
-                    <p>
-                        Avec toi, j’ai trouvé plus qu’une copine,
-                        j’ai trouvé ma meilleure amie,
-                        ma confidente, ma famille.
+                    <p id="message2">
+                        Avec toi, j’ai trouvé plus qu’une copine.
                     </p>
                     <div class="mini-heart">❤</div>
                 </div>
 
                 <div class="message-card">
                     <div class="quote">“</div>
-                    <p>
-                        Tu es ma plus belle chance,
-                        mon plus beau cadeau
-                        que la vie m’a offert.
+                    <p id="message3">
+                        Tu es ma plus belle chance.
                     </p>
                     <div class="mini-heart">❤</div>
                 </div>
@@ -193,25 +184,25 @@
                 <div class="promesse-card">
                     <div class="icon">❤</div>
                     <h3>T’aimer</h3>
-                    <p>T’aimer chaque jour un peu plus qu’hier.</p>
+                    <p id="promesse1">T’aimer chaque jour un peu plus qu’hier.</p>
                 </div>
 
                 <div class="promesse-card">
                     <div class="icon">🛡</div>
                     <h3>Te protéger</h3>
-                    <p>Être là pour toi, te soutenir quoi qu’il arrive.</p>
+                    <p id="promesse2">Être là pour toi, te soutenir quoi qu’il arrive.</p>
                 </div>
 
                 <div class="promesse-card">
                     <div class="icon">★</div>
                     <h3>Te faire sourire</h3>
-                    <p>Faire de mon mieux pour voir ton sourire chaque jour.</p>
+                    <p id="promesse3">Faire de mon mieux pour voir ton sourire chaque jour.</p>
                 </div>
 
                 <div class="promesse-card">
                     <div class="icon">∞</div>
                     <h3>Rester fidèle</h3>
-                    <p>Être à tes côtés, aujourd’hui, demain et pour toujours.</p>
+                    <p id="promesse4">Être à tes côtés, aujourd’hui, demain et pour toujours.</p>
                 </div>
 
             </div>
@@ -224,9 +215,35 @@
 
             <div class="heart-big">💗</div>
 
-            <h2>Je t’aime</h2>
-            <p>Plus que les mots ne peuvent le dire.</p>
-            <p>Merci d’être ma personne, ma moitié, ma vie. 💕</p>
+            <h2 id="finalPrenom">Grâce,</h2>
+
+            <p>
+                si tu es arrivée jusqu'ici,<br>
+                c'est parce que tu occupes une place spéciale dans mon cœur.
+            </p>
+
+            <h3>Nous sommes ensemble depuis :</h3>
+
+            <div class="counter">
+                <div>
+                    <strong id="days">0</strong>
+                    <span>jours</span>
+                </div>
+
+                <div>
+                    <strong id="hours">0</strong>
+                    <span>heures</span>
+                </div>
+
+                <div>
+                    <strong id="minutes">0</strong>
+                    <span>minutes</span>
+                </div>
+            </div>
+
+            <p class="final-text">
+                Je t’aime plus que les mots ne peuvent le dire ❤️
+            </p>
 
             <div class="final-icons">
                 <span>❤</span>
